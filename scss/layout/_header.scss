@@ -1,0 +1,32 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+
+.header-home .row{
+    @include container();
+   
+    @media screen and (min-width: rem(800)){
+        border: 10px solid blue;
+    }
+    
+}
+.top-menu {
+    background-color: rgb(220, 220,220);
+    @include container();
+    
+    a{
+        display:block;
+        padding: 1rem;
+        
+        &:hover {
+            background-color: yellow;
+        }
+        
+    }
+    
+    li {
+        float: left;
+        list-style: none;
+    }
+}

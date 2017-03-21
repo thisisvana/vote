@@ -1,0 +1,8 @@
+.page {
+    @include container();
+}
+
+.page-content {
+    @include col(1/2, 9/12);
+    background-color: yellow; 
+}
