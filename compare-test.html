@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+          html, body, div{
+            margin: 0;
+          }
+
+          h1{
+            font-size: 16px;
+          }
+/*USE TOGGLE CLASS TO SHOW AND HIDE*/
+/*CLASS IS NEEDED*/
+          .hide{
+            display: none;
+          }
+          .topic1{
+            background-color: red;
+          }
+          .topic2{
+            background-color: blue;
+          }
+          .topic3{
+            background-color: yellow;
+          }
+          .topic4{
+            background-color: green;
+          }
+        </style>
+    </head>
+    <body>
+<!-- Buttons for filtering must have specified class and data Attributes -->
+      <div>
+        <button class="filterButton" data-filter="liberal" type="button">liberal</button>
+        <button class="filterButton" data-filter="green" type="button">green</button>
+        <button class="filterButton" data-filter="conservative" type="button">conservative</button>
+        <button class="filterButton" data-filter="ndp" type="button">ndp</button>
+      </div>
+<!-- Buttons for filtering must have specified class and data Attributes -->
+      <div>
+        <button class="filterButton" data-filter="topic1" type="button">topic 1</button>
+        <button class="filterButton" data-filter="topic2" type="button">topic 2</button>
+        <button class="filterButton" data-filter="topic3" type="button">topic 3</button>
+        <button class="filterButton" data-filter="topic4" type="button">topic 4</button>
+      </div>
+<!-- Button for use in clearing storage data and refreshing the page -->
+      <button id="clear" type="button">CLEAR localStorage</button>
+<!-- Result section must have id's in below sections -->
+      <h1>liberal Votes</h1>
+      <h3 id="libResult"></h3>
+      <h1>conservative Votes</h1>
+      <h3 id="consResult"></h3>
+      <h1>green Votes</h1>
+      <h3 id="greenResult"></h3>
+      <h1>ndp Votes</h1>
+      <h3 id="ndpResult"></h3>
+<!-- TOPICS must be contained in a div with class topic# -->
+      <div class="topic1">
+        <h1>TOPIC 1</h1>
+<!-- Topic policy for each party must be contained in a div w voteButton and have class of the party name -->
+        <div class="liberal">
+          <h1>LIBERAL</h1>
+<!-- VOTE BUTTON must have voteButton class, data attribute with party abbreviation and topic# -->
+          <button class="voteButton" data-vote="lib1" type="button">VOTE</button>
+        </div>
+        <div class="green">
+          <h1>GREEN</h1>
+          <button class="voteButton" data-vote="green1" type="button">VOTE</button>
+        </div>
+        <div class="conservative">
+          <h1>CONSERVATIVE</h1>
+          <button class="voteButton" data-vote="cons1" type="button">VOTE</button>
+        </div>
+        <div class="ndp">
+          <h1>NDP</h1>
+          <button class="voteButton" data-vote="ndp1" type="button">VOTE</button>
+        </div>
+      </div>
+<!-- *****
+END first topic example
+**************** -->
+      <div class="topic2">
+        <h1>TOPIC 2</h1>
+        <div class="liberal">
+          <h1>LIBERAL</h1>
+          <button class="voteButton" data-vote="lib2" type="button">VOTE</button>
+        </div>
+        <div class="green">
+          <h1>GREEN</h1>
+          <button class="voteButton" data-vote="green2" type="button">VOTE</button>
+        </div>
+        <div class="conservative">
+          <h1>CONSERVATIVE</h1>
+          <button class="voteButton" data-vote="cons2" type="button">VOTE</button>
+        </div>
+        <div class="ndp">
+          <h1>NDP</h1>
+          <button class="voteButton" data-vote="ndp2" type="button">VOTE</button>
+        </div>
+      </div><div class="topic3">
+        <h1>TOPIC 3</h1>
+        <div class="liberal">
+          <h1>LIBERAL</h1>
+          <button class="voteButton" data-vote="lib3" type="button">VOTE</button>
+        </div>
+        <div class="green">
+          <h1>GREEN</h1>
+          <button class="voteButton" data-vote="green3" type="button">VOTE</button>
+        </div>
+        <div class="conservative">
+          <h1>CONSERVATIVE</h1>
+          <button class="voteButton" data-vote="cons3" type="button">VOTE</button>
+        </div>
+        <div class="ndp">
+          <h1>NDP</h1>
+          <button class="voteButton" data-vote="ndp3" type="button">VOTE</button>
+        </div>
+      </div><div class="topic4">
+        <h1>TOPIC 4</h1>
+        <div class="liberal">
+          <h1>LIBERAL</h1>
+          <button class="voteButton" data-vote="lib4" type="button">VOTE</button>
+        </div>
+        <div class="green">
+          <h1>GREEN</h1>
+          <button class="voteButton" data-vote="green4" type="button">VOTE</button>
+        </div>
+        <div class="conservative">
+          <h1>CONSERVATIVE</h1>
+          <button class="voteButton" data-vote="cons4" type="button">VOTE</button>
+        </div>
+        <div class="ndp">
+          <h1>NDP</h1>
+          <button class="voteButton" data-vote="ndp4" type="button">VOTE</button>
+        </div>
+      </div>
+      <h1 id="result"></h1>
+<!-- ADD jquery library and script src -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+      <script src="js/comparePolicyQuiz.js"></script>
+    </body>
+</html>
