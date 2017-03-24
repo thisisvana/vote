@@ -10,7 +10,7 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
-        
+        <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,500,700&amp;subset=latin-ext" rel="stylesheet">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="js/vendor/foundation.min.js" type="text/javascript"></script>
@@ -31,12 +31,12 @@
                 </ul>
             </div>
         </nav>
-        
+
         <header class="header-home">
             <div class="row">
-            
+
                 <?php include "main-menu.php"; ?>
-                
+
             </div>
             <div class="hero-area">
                 <div class="row">
@@ -44,6 +44,3 @@
                 </div>
             </div>
         </header>
-        
-        
-
