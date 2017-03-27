@@ -19,14 +19,8 @@
 
 // 4. Layout-related sections
 @import
-  
-  'layout/page',
-  'layout/topmenu',
   'layout/header',
-  'layout/mainmenu',
-  'layout/newsletter',
-  'layout/sidebar',
-  'layout/footer';
+  'layout/navbar';
 
 // 5. Components
 @import
@@ -39,4 +33,3 @@
 // 7. Themes
 @import
   'themes/default';
-
