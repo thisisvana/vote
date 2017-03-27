@@ -2,6 +2,9 @@
 // This file contains very basic styles.
 // -----------------------------------------------------------------------------
 
+ul{
+  list-style: none;
+}
 
 /* ==========================================================================
    Base styles: opinionated defaults
@@ -21,7 +24,7 @@ html {
  */
 *, *::before, *::after {
   box-sizing: inherit;
-} 
+}
 html {
     color: #222;
     font-size: 1em;
@@ -97,11 +100,11 @@ textarea {
  * Basic styles for links
  */
 a {
-  color: $brand-color;
+  //color: $brand-color;
   text-decoration: none;
 
   @include on-event {
-    color: $text-color;
+    //color: $text-color;
     text-decoration: underline;
   }
 }

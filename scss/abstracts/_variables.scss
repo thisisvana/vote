@@ -2,46 +2,34 @@
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
 
-
-
-
-
+/// Google font embed in partials/header.php
 /// Regular font family
 /// @type List
-$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$text-medium: 'Libre Fanklin', 'Helvetica Neue', 'Arial', sans-serif !default;
+$text-light: 'Libre Fanklin Light', 'Helvetica Neue Light', 'Arial', sans-serif !default;
+$text-bold: 'Libre Fanklin Bold', 'Helvetica', 'Arial', sans-serif !default;
 
-/// Code (monospace) font family
-/// @type List
-$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
-
-
-
-
-
-/// Copy text color
-/// @type Color
-$text-color: rgb(34, 34, 34) !default;
-
-/// Main brand color
-/// @type Color
-$brand-color: rgb(229, 0, 80) !default;
-
+/// Main brand colors
+/// Yellow
+$brand-yellow: #E8951B !default;
+/// Green
+$brand-green: #22A77E !default;
+/// Red
+$brand-red: #E6263C !default;
+/// Blue
+$brand-blue: #1173BA !default;
+/// Purple
+$brand-purple: #8E2F88 !default;
 /// Light grey
-/// @type Color
-$light-grey: rgb(237, 237, 237) !default;
-
+$light-grey: #797979 !default;
 /// Medium grey
-/// @type Color
-$mid-grey: rgb(153, 153, 153) !default;
-
+$med-grey: #777776 !default;
 /// Dark grey
-/// @type Color
-$dark-grey: rgb(68, 68, 68) !default;
+$dark-grey: #2B2B2B !default;
+
 
 
 //grid layout settings
-
-
 /// Container's maximum width
 /// @type Length
 $tablet: rem(767) !default;

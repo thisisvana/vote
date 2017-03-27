@@ -1,20 +1,32 @@
 /**
  * Basic typography style for copy text
  */
-body {
-  color: $text-color;
-  font: normal 125% / 1.4 $text-font-stack;
+//HEADER
+.nav-text{
+  color: white;
+  font-family: $text-bold;
+  font-size: rem(30.67);
+  text-transform: capitalize;
+  text-align: center;
 }
-.top-menu {
-    background-color: rgb(220, 220,220);
-    
-    a{
-        display:block;
-        padding: 1rem;
-    }
-    
-    li {
-        float: left;
-        list-style: none;
-    }
+
+.input-header{
+  font-family: $text-medium;
+  font-size: rem(26.61);
+  text-transform: capitalize;
+  color: $light-grey;
+}
+
+.input-text{
+  font-family: $text-light;
+  font-size: rem(32.99);
+  color: $med-grey;
+}
+
+.submit-text{
+  font-family: $text-bold;
+  font-size: rem(21.74);
+  text-transform: capitalize;
+  text-align: center;
+  color: white;
 }

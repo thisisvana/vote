@@ -1,0 +1,43 @@
+.side-nav{
+  background-color: $dark-grey;
+  padding: rem(27.612);
+}
+
+.nav-logo{
+  width: rem(266.095);
+  margin: 0 auto;
+  margin-bottom: rem(42.664);
+}
+
+.nav-border{
+  background-color: $dark-grey;
+  width: rem(384.485);
+  border: 2px solid;
+  padding: rem(25.266) 0;
+  margin: 0 auto;
+  margin-bottom: rem(10.879);
+}
+
+.border-ndp{
+  border-color: $brand-yellow
+}
+
+.border-green{
+  border-color: $brand-green;
+}
+
+.border-liberal{
+  border-color: $brand-red;
+}
+
+.border-conservative{
+  border-color: $brand-blue;
+}
+
+.border-purple{
+  border-color: $brand-purple;
+}
+
+.nav-input{
+  padding: rem(21.5);
+}
